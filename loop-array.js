@@ -1,9 +1,11 @@
+"use strict";
 var myLanguages = ["Java", "Python"];
 // Normal for loop
 console.log("My languages on June:");
 for (var i = 0; i < myLanguages.length; i++) {
     console.log(myLanguages[i]);
 }
+// TypeScript array is dynamic
 myLanguages.push("TypeScript");
 // Simplified for foop
 console.log("My languages on July:");

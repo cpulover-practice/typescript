@@ -1,3 +1,4 @@
+"use strict";
 var isMale = true;
 var grade = 69;
 var lastName = "Justa";
