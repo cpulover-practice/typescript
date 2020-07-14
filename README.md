@@ -7,6 +7,11 @@
   - Transpliling for every time change is made
   - Add tag ```-noEmitOnError``` to prevent generate js when error compiling.
 - Data types: boolean, number, string, any
-[[data-types]()]
+[[data-types.ts]()]
   - Template strings ``` `${var}` ``` for long concatenation
   - Use any type for only generic methods
+- Loop & array 
+[[loop-array.ts]()]
+  - Simplified ```for loop```
+  - TypeScript array is dynamic/growable
+  - Add new element to array: ```push```
