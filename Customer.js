@@ -1,4 +1,6 @@
 "use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.Customer = void 0;
 var Customer = /** @class */ (function () {
     function Customer(firstName, lastName) {
         this._firstName = firstName;
@@ -27,6 +29,7 @@ var Customer = /** @class */ (function () {
     });
     return Customer;
 }());
+exports.Customer = Customer;
 var customer = new Customer("Cpulover", "Justa");
 console.log(customer.firstName); //this calls firstName() accessor
 console.log(customer.lastName); //this calls lastName() accessor

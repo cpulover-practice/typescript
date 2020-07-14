@@ -1,4 +1,4 @@
-class Customer {
+export class Customer {
      //Traditional constructor
     private _firstName: string;
     private _lastName: string;

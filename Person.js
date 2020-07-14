@@ -1,4 +1,6 @@
 "use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.Person = void 0;
 var Person = /** @class */ (function () {
     //Shorcut constructor
     function Person(_firstName, _lastName) {
@@ -26,8 +28,10 @@ var Person = /** @class */ (function () {
         enumerable: false,
         configurable: true
     });
+    Person.prototype.toString = function () {
+        return "Full name: " + this._firstName + " " + this._lastName;
+    };
     return Person;
 }());
+exports.Person = Person;
 var person = new Person("Cpulover", "Justa");
-console.log(person.firstName); //this calls firstName() accessor
-console.log(person.lastName); //this calls lastName() accessor

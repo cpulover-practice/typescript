@@ -7,7 +7,7 @@
   - Run the JavaScript file: ```node <file>.js```
   - Transpliling for every time change is made
   - Add flag ```--noEmitOnError``` to prevent generate js when error compiling.
-- Add ```tsconfig.json``` in the root the define compiler options and project settings 
+- Add ```tsconfig.json``` in the root to define compiler options and project settings 
 [[tsconfig.json]()]
   - Run ```tsc --init``` to generate a template for this file instead of adding manually
   - Compile all ```*.ts``` files by default
@@ -37,6 +37,12 @@
   - Accessor is only supported in ES5+ (use ```--target ES5``` flag to fix)
 - Shortcut constructor: include properties and tradictional constructor
 [[Person.ts]()]
-  - 
+
+### Inheritance & Interface
+[[Person.ts]()] [[Student.ts]()] [[Driver]()]
+- Single inheritance, multipe interfaces
+- Support abtract & overriding
+- Sub-classes must implement all abstract methods of the supper abstract class
+
 ### Terminal Commands
 - ```tsc --build --clean```: removes all compiled js files

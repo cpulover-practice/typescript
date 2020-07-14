@@ -1,4 +1,4 @@
-class Person {
+export class Person {
     //Shorcut constructor
     constructor(private _firstName: string, 
         private _lastName: string) {
@@ -19,8 +19,10 @@ class Person {
     public set lastName(value: string) {
         this._lastName = value;
     }
+
+    toString(): string{
+        return `Full name: ${this._firstName} ${this._lastName}`;
+    }
 }
 
 let person = new Person("Cpulover", "Justa");
-console.log(person.firstName); //this calls firstName() accessor
-console.log(person.lastName); //this calls lastName() accessor
