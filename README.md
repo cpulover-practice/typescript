@@ -1,28 +1,26 @@
-# List of practiced topics
+# Practiced topics
 
 ### Configuaration
 - Execute files:
   - Go to directory containing the file in Terminal: ``` Ctrl+Shift+` ``` and chose the project
-  - Transpliling: ```tsc <file>.ts``` to compile and generate JavaScript file ```<file>.js``` (```tsc``` if the configuration file is available)
+  - Transpliling: ```tsc <file>.ts``` to compile and generate JavaScript file ```<file>.js``` {only ```tsc``` if configuration file ```tsconfig.json``` is available}
   - Run the JavaScript file: ```node <file>.js```
-  - Transpliling for every time change is made
-  - Add flag ```--noEmitOnError``` to prevent generate js when error compiling.
-- Add ```tsconfig.json``` in the root to define compiler options and project settings 
-[[tsconfig.json]()]
-  - Run ```tsc --init``` to generate a template for this file instead of adding manually
+  - Transpliling for every change
+  - Add flag ```--noEmitOnError``` to avoid generating js when error compiling
+- Add ```tsconfig.json``` in the root to define compiler options and project settings manually or by CLI: ```tsc --init``` 
+[[tsconfig.json](https://github.com/cpulover-practice/typescript/blob/master/tsconfig.json)]
   - Compile all ```*.ts``` files by default
-
 
 ### Basic
 - Data types: boolean, number, string, any
-[[data-types.ts]()]
-  - Template strings ``` `${var}` ``` for long concatenation
-  - Use any type for only generic methods
+[[data-types.ts](https://github.com/cpulover-practice/typescript/blob/master/data-types.ts)]
+  - String interpolation: ``` `${var}` ``` for string concatenation
+  - Use ```any``` type only for generic methods ???
 - Loop & array 
-[[loop-array.ts]()]
-  - Simplified ```for loop```
+[[loop-array.ts](https://github.com/cpulover-practice/typescript/blob/master/loop-array.ts)]
+  - Simplified ```for loop```: ```let _ of _```
   - TypeScript array is dynamic/growable
-  - Add new element to array: ```push```
+  - Add new element to array: ```push()```
 
 ### Class
 [[Customer.ts]()]
@@ -46,3 +44,4 @@
 
 ### Terminal Commands
 - ```tsc --build --clean```: removes all compiled js files
+- ```tsc --init```: generate template for configuration file ```tsconfig.json```
